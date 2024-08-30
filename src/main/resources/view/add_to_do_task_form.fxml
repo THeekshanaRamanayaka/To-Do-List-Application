@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="363.0" prefWidth="362.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddToDoTaskFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#007bc7d9" height="75.0" stroke="BLACK" strokeType="INSIDE" width="362.0" />
+      <Label layoutX="69.0" layoutY="23.0" text="Add To-Do Task Form" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <JFXTextArea fx:id="txtAreaAddDescription" layoutX="33.0" layoutY="165.0" prefHeight="51.0" prefWidth="297.0" promptText="Add a Title &amp; description" />
+      <DatePicker fx:id="date" layoutX="32.0" layoutY="245.0" prefHeight="35.0" prefWidth="297.0" />
+      <JFXButton layoutX="146.0" layoutY="300.0" onAction="#btnAddTaskOnAction" style="-fx-background-color: #4cd137;" text="Add Task" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="91.0" layoutY="340.0" text="Theekshanasankalpa2004rcc@gamail.com">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="272.0" layoutY="90.0" onAction="#btnBackToHomeOnAction" prefHeight="26.0" prefWidth="76.0" style="-fx-background-color: #e84118;" text="Back To Home" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="33.0" layoutY="121.0" text="Task ID : " />
+      <Label fx:id="lblTaskId" layoutX="91.0" layoutY="117.0" prefHeight="26.0" prefWidth="96.0" text="0000" />
+   </children>
+</AnchorPane>

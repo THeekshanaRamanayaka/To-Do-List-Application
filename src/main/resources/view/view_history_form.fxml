@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="505.0" prefWidth="579.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewHistoryFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#007ec7d9" height="84.0" stroke="BLACK" strokeType="INSIDE" width="579.0" />
+      <Label layoutX="152.0" layoutY="20.0" text="View History Form" textFill="WHITE">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblTskHistory" layoutX="28.0" layoutY="168.0" prefHeight="299.0" prefWidth="524.0">
+        <columns>
+          <TableColumn fx:id="colTaskId" prefWidth="102.0" text="Tsak ID" />
+          <TableColumn fx:id="colTaskDescription" prefWidth="276.0" text="Task Description" />
+            <TableColumn fx:id="colCompletedDate" prefWidth="145.0" text="Completed Date" />
+        </columns>
+      </TableView>
+      <JFXTextField fx:id="txtSearchByDate" layoutX="160.0" layoutY="111.0" prefHeight="30.0" prefWidth="188.0" promptText="Search by date" />
+      <JFXButton layoutX="364.0" layoutY="110.0" onAction="#btnSearchOnAction" prefHeight="30.0" prefWidth="56.0" style="-fx-background-color: #00a8ff;" text="Search" textFill="WHITE" />
+      <Label layoutX="199.0" layoutY="480.0" text="Theekshanasankalpa2004rcc@gamail.com">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="476.0" layoutY="110.0" onAction="#btnBackToHomeOnAction" prefHeight="30.0" prefWidth="76.0" style="-fx-background-color: #e84118;" text="Back To Home" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
